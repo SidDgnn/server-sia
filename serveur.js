@@ -35,6 +35,11 @@ app.get("/api/code", (req, res) => {
   }
 });
 
+// Route principale pour afficher "Sid"
+app.get("/", (req, res) => {
+  res.send("Sid");
+});
+
 // Lancer le serveur
 app.listen(PORT, () => {
   console.log(`Serveur intermédiaire en cours d'exécution sur le port ${PORT}`);
